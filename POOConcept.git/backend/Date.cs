@@ -39,7 +39,14 @@ public class Date
 
     //private methods
 
-
+    private int  ValidateYear(int year)
+    {
+        if (year < 0)
+        {
+            throw new Exception($"the year {year} is not valid."); 
+        }
+        return year;
+    }
 
 
 }
